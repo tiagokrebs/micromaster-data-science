@@ -12,4 +12,4 @@ pip install -r requirements.txt
 ```
 jupyter-lab
 ```
-Go for [localhost:8888/lab](localhost:8888/lab)
+Go to http://localhost:8888/lab
