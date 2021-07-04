@@ -1,3 +1,7 @@
 venv
 .DS_Store
 **/.ipynb_checkpoints
+**/*.pkl
+**/*.zip
+**/*.sqlite
+**/*.csv
