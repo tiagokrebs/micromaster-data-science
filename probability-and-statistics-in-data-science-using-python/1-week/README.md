@@ -1,72 +1,35 @@
+[comment]: <> "LTeX: language=pt-BR"
+# Introdução a probabilidade e estatística
+
+Probabilidade: jogo de dados
+Estatística: manter um score
+
+Estatística é uma ferramenta para tratar incertezas.
+
 ## Probabilidade
-- Probabilidade é o framework de teoria matemática para a computação de probabilidade de eventos complexos
-- Assume-se que a probabilidade de eventos simples é conhecida
+- Framework matemático para a computação da probabilidade de eventos complexos.
+- Presunção que a `probabilidade` de `eventos` básicos são conhecidos.
 
-### Flip coin 
+Uma moeda possui probabilidades iguais tanto para cara quanto cara corôa.
+Isso significa que se jogarmos uma moeda `k`vezes (ex: 10000), o número de "caras" é `cerca de` `k/2 = 10000/2 = 5000`.
 
-Jogando uma moeda os resultados são cara ou coroa ou a probabilidade dos eventos simples são iguais. 
-Isso não significa, porém, que ao jogarmos uma moeda 10k vezes os resultados serão iguais tanto para cara quanto para coroa.
+Ver notebook [What is Probability Theory?](./Topic1_Lecture/Topic1-IntroMotivation/1.What-is-Probability.ipynb)
 
-Podemos afirmar matematicamente que ao jogar uma modeda 10k vezes o resutado será aproximadamente 5k.
-k = 10.000
-10.000/2 = 5.000
-
-Go to the notebook - Part 1
-
---
-
-- Teoria da propabilidade é a matemática envolvida em prover uma versão precisa de afirmações como as do caso flip a coim
-- Na maioria dos casos podemos encontrar probabilidades aproximadas utilizando simulações Monte-Carlo como no runbook
-- Aproximações, porém, não são suficientes
-     - Não proporcionam uma resposta exata e precisam ser repetidas inúmeras vezes até atingir respostas mais precisas
-     - Teoria da probailidade sempre será mais rápida do que essas aproximações
-
+Teoria da probabilidade é a matemática envolvida em provar os resultados, como os apresentados no resumo do exemplo do notebook acima.
 
 ## Estatística
-- Oposto da definição de Probabilidade
-- Dado um conjunto de dados gerado por algum método estocástico propriedades são inferidas sobre probabilidades base
+- A taoria da probabilidade computa a probabilidade de eventos complexos dadas algumas probabilidade base.
+- Estatística faz o caminho contrário. Com base nos dados gerados por algum evento as probabilidades base são inferidas.
 
-### Flip coin
+Exemplo: como definimos se uma moeda tende mais a resultar em "cara" quando é jogada? Após jogar 1000 vezes, se 570 resultados forem "cara" podemos considerar a moeda como injusta? E se o resultado for 507?
 
-Jogando uma moeda 1000 vezes e obtendo o resutado "cara" 750 vezes, podemos concluir que a moeda tem tendência a esse resultado? 
-Se o resultado for 570 "cara"? Mais próximo dos 50% porém ainda com valores de "cara" maior]
-Como decidimos se a moeda é tendenciosa ou não?
+Para responder essas perguntas calculamos a probabilidade. Caso a probabilidade seja muito pequena podemos `rejeitar com confiança` a hipótese de que a moeda é injusta.
 
-Inferência
-- Supõem-se que a moeda é justa
-- Calculamos qual é a probabilidade das jogadas resultarem em 570 "cara"
-- Se essa probabulidade for muito pequena podemos rejeitar **com confiança** a hipótese de que a moeda é justa
+Ver notebook [What is statistics?](./Topic1_Lecture/Topic1-IntroMotivation/2.What-is-Statistics_.ipynb)
 
-Go to the Notebook - Part 2
+Estatística é sobre obter dados de algum processo real e apresentar conclusões sobre esse processo com base nos mesmos.
 
---
+## Puzzle
 
-Estatística é sobre analisar dados reais e criar conclusões
-- pesquisas
-- testes A/B
-- decisão sobre eficácia de um método ou produto
-
-
-## 3-Card Puzzle
-Temos 3 cartas com as combinações de cores azul e vemelho em ambos os lados:
-- Carta 1: vermellho / azul
-- Carta 2: azul / azul
-- Carta 3: vermelho / vermelho
-A cada jogada uma carta é retirada de um saco e colocada na mesa.
-Caso o lado contrário da carta seja igual um jogador ganha um ponto.
-Caso o outro lado seja diferente o outro jogador ganha um ponto.
-Premissa: é um jogo justo, já que as chances entre vermelho e azul são iguais (50%)
-
-Tesste de Monte-Carlo...
-Go to notebook
-
---
-
-Argumento alternativo: ao escolher uma carta existem 2/3 de chance dela possuir a mesma cor no lado contrário e 1/3 uma cor diferente.
-- O arguemento anterior originl é convincente mas está errado
-- Como temos certeza de que está incorrero? Através de simulação
-- Muitas vezes simulações não são práticas o suficiente, podem demorar muito tempo e vão reproduzir apenas um resultado aproximado, como validar então?
-    - Precisamos introduzir conceitos de resultados e eventos (next class)
-    - Precisamos de mais formalismo
-
+Ver notebook [The three card puzzle](./Topic1_Lecture/Topic1-IntroMotivation/4.The-Three-card-Puzzle.ipynb)
 
