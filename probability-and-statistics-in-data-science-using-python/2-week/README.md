@@ -20,7 +20,7 @@ Membros
 - Membro pertence: $\in$. Ex: 0 $\in \{0,1\}$
 - Membro não perntence: $\notin$
 - Set contém: $\ni$. EX: $\{0,1\} \ni 0$
-- Set não contém $\notni$
+- Set não contém $\not\ni$
 - A ordem dos membros não importa
 - A repetição dos membros não importa
 
@@ -77,7 +77,7 @@ Interseção
 - Exemplo: $\{0,1\}\{1,2\}$, interseção em (1)
 - Sets não compartilham nenhum elemento, $ x \in A \lor x \in B$
 - Exemplo: $\{0,1\}\{2,3\}$, não há interseção
-- Set vazio $\empty$ não tem interseção com nenhum set
+- Set vazio $\emptyset$ não tem interseção com nenhum set
 - Um universo não vazio $\Omega$ tem interseção com qualquer set
 - Um set tem interseção com si próprio se não-vazio
 
@@ -89,7 +89,7 @@ Subsets
 - Se A contém elementos que não estão em B, $A \nsubseteq B$, ou $B \supseteq A$
 - Exemplo: $\{0,1\} \nsubseteq \{1,2\}$
 - Subsets entre sets numéricos, $\mathbb{P} \subseteq \mathbb{N} \subseteq \mathbb{Z} \subseteq \mathbb{Q} \subseteq \mathbb{R}$
-- Set vazio, $\empty \subseteq A \subseteq A \subset \Omega$
+- Set vazio, $\emptyset \subseteq A \subseteq A \subset \Omega$
 - Se $A \subseteq B$ e $B \subseteq C$ então $A \subseteq C$
 - Se $A \subseteq B$ e $B \subseteq A$ então $A = B$
 
@@ -105,7 +105,7 @@ Pertence ($\in$) X Subset ($\subseteq$)
 - Exemplos: $0 \in \{0,1\}$ `0` pertence, $\{0\} \notin \{0,1\}$ o set `{0}` não pertence
 -  $\subseteq$ é a relação entre dois sets, $A \subseteq B$, `A` é subset de `B`
 - Exemplo: $\{0\} \subseteq \{0,1\}$, o set `{0}` pertence, $0 \nsubseteq \{0,1\}$, `0` não é subset
-- Exceção do set vazio. $\empty \in \{\empty\}$ e $\empty \subseteq \{\empty\}$. Subset vazio é um elemento e subset do set $\{\empty\}$
+- Exceção do set vazio. $\emptyset \in \{\emptyset\}$ e $\emptyset \subseteq \{\emptyset\}$. Subset vazio é um elemento e subset do set $\{\emptyset\}$
 
 ## Operações
 
@@ -113,32 +113,32 @@ Complemento
 - Relembrando que o universo $\Omega$ contém todos os elementos
 - O `complemento` $A^c$ de $A$ é o set do universo $\Omega$ que não estão em $A$. Ou seja, $A^c = \{ x \in \Omega : x \notin A\}$
 - Ex: $\Omega = \{0,1\}$, $\{0\}^c = \{1\}$
-- Ex: $\Omega = \{0,1\}$, $\{0,1\}^c = \{\empty\}$
+- Ex: $\Omega = \{0,1\}$, $\{0,1\}^c = \{\emptyset\}$
 - Ex: $\Omega = \{0,1,3\}$, $\{0\}^c = \{1,2\}$
 
 Identidades
 - Relações para todos os sets
-- $\empty^c = \Omega$ e $\Omega = \empty^c$
+- $\emptyset^c = \Omega$ e $\Omega = \emptyset^c$
 - $A$ e $A^c$ são `disjoint`
 - $(A^c)^c = A$
 - $A \subseteq B$ então $A^c \supseteq B^c$
 
 Interseção
 - A interseção entre $A \cap B$ é o set de elementos em abos A e B. Ex: $\{0,1\} \cap \{1,3\} = \{1\}$
-- Exemplo set vazio: $\{0\} \cap \{1\} = \empty$
+- Exemplo set vazio: $\{0\} \cap \{1\} = \emptyset$
 
 Uniâo
 - A união de $A \cup B$ é a coleção de elementos em A, B ou em ambos. Ex: $\{0,1\} \cup \{1,2\} = \{0,1,2\}$
 
 Idetidades ou Leis
 - Identidade: $A \cap \Omega = A$ e $A \cup \Omega = \Omega$
-- Ligação universal: $A \cap \empty = \empty$ e $A \cup \empty = A$
+- Ligação universal: $A \cap \emptyset = \emptyset$ e $A \cup \emptyset = A$
 - Indepotência: $A \cap A = A$ e $A \cup A = A$
-- Complemento: $A \cap A^c = \empty$ e $A \cup A^c = \Omega$
+- Complemento: $A \cap A^c = \emptyset$ e $A \cup A^c = \Omega$
 
 Diferença
 - A difereça de $A - B$ é o set de elementos presentes em A mas não em B. Ex: $\{0,1\} - \{1\} = \{0\}$
-- Ex: $\{0,1\} - \{0,1,2\} = \empty$
+- Ex: $\{0,1\} - \{0,1,2\} = \emptyset$
 - Pode ser notado com `\`. Ex: $A \backslash B$
 
 Diferença simétrica
@@ -171,7 +171,7 @@ $\begin{matrix}
  \end{matrix}$
 
 Identidades
-- $A \times \empty = \empty \times A = \empty$
+- $A \times \emptyset = \emptyset \times A = \emptyset$
 - $A \times (B \cup C) = A \times B \cup A \times C$
 - $A \times (B \cap C) = A \times B \cap A \times C$
 - $A \times (B - C) = A \times B = A \times C$
