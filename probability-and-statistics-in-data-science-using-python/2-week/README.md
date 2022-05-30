@@ -158,7 +158,8 @@ Produto cartesiano
 - $A \times A$ é esctrito $A^2$
 - Exemplo: $A=[0,2]$ $B = [1,4]$  
 $A \times B = \{(x,y) : X \in [0,2], y \in [1,4]\}$  
-![Exemplo produto cartesiano](./expcartesiano.png)
+
+![Produto cartesiano](./expcartesiano.png)
 
 Sets discretos
 - Sets finitos
